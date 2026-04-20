@@ -1,4 +1,4 @@
-#import "../../lib.typ": *
+#import "../../lib/lib.typ": *
 #import "../acronyms.typ": acronyms
 
 = Einleitung
