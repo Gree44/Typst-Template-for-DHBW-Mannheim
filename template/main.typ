@@ -1,4 +1,4 @@
-#import "../lib.typ": *
+#import "../lib/lib.typ": *
 #import "acronyms.typ": acronyms
 
 #show: supercharged-dhbw.with(
@@ -9,9 +9,9 @@
   acronyms: acronyms, // displays the acronyms defined in the acronyms dictionary
   at-university: false, // if true the company name on the title page and the confidentiality statement are hidden
   show-confidentiality-statement: false,
-  help-from-ai-disclaimer-content: "template/assets/AI_Hilfsmittelangabe.pdf",
+  help-from-ai-disclaimer-content: "../template/assets/AI_Hilfsmittelangabe.pdf",
   bibliography: bibliography("sources.bib"),
-  bib-style: "ieee",//bib-style: "template/assets/styles/ieee.csl",
+  bib-style: "ieee",//bib-style: "../template/assets/styles/ieee.csl",
   date: datetime.today(),
   language: "de", // en, de
   supervisor: (company: "Simon Siemert", university: "Prof. Dr. Felix Federlix"),
