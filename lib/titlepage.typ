@@ -297,8 +297,9 @@
       text(
         weight: "semibold",
         TITLEPAGE_SUPERVISOR.at(language) +
-        // university-short +
-        [:]
+        if language == "en" {
+          if university-short != none { university-short + [:] } else { [:] }
+        } else { [] }
       )
     },
     if ("university" in supervisor and type(supervisor.university) == str) {
